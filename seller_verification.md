@@ -1,4 +1,4 @@
-# Documentation for wishlist API
+# Documentation for Seller Verification API
 Git Link: < https://github.com/srvpl/api-node-2/tree/seller_verification> 
 
 ## nstall Packages

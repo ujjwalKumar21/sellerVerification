@@ -61,9 +61,6 @@ const sellerSchema = new Schema({
     },
     replayToEmail : {
         type :String
-    },
-    description: { 
-        type: String
     }
 
 }, { timestamps : true}

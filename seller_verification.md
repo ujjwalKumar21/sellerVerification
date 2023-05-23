@@ -1,5 +1,5 @@
 # Documentation for Seller Verification API
-Git Link: < https://github.com/srvpl/api-node-2/tree/seller_verification> 
+Git Link: https://github.com/srvpl/api-node-2/tree/seller_verification 
 
 ## nstall Packages
 ```
@@ -83,6 +83,12 @@ yarn dev
 
 ```http
     GET localhost:3000/v1/verifySeller/getData
+```
+
+#### get seller name
+
+```http
+    GET localhost:3000/v1/verifySeller/getSellerName
 ```
 
 #### get attachments

@@ -13,6 +13,19 @@ module.exports = {
       res.send(err);
     }
   },
+  
+  getSellerName: async (req, res) => {
+    try {
+        const data = await sellerInfoModel.find({},{ _id: 0, fullname:1 });
+        console.log(data);
+        if (!data || data.length == 0)
+          return res.send({ msg: "No data is found" });
+        return res.send(data);
+      }
+    catch (err) {
+      res.send(err);
+    }
+  },
 
   getFileData: async (req, res) => {
     let id = req.params.id;

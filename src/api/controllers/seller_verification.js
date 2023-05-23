@@ -18,7 +18,8 @@ module.exports = {
     let id = req.params.id;
     if(!id) return res.send("Id is required");
     try {
-        const data = await sellerInfoModel.find({_id: id},{_id:1, gstImageUrl: 1, panImageUrl: 1, email:1, fullname:1, description: 1, isVerify: 1, store_name: 1, mobile: 1, role: 1, marketplace: 1, storeDtl: 1, sellerType: 1});
+        const data = await sellerInfoModel.find({_id: id},{_id:1, gstImageUrl: 1, panImageUrl: 1,
+pan_number: 1, gst_number: 1, email:1, fullname:1, description: 1, isVerify: 1, store_name: 1, mobile: 1, role: 1, marketplace: 1, storeDtl: 1, sellerType: 1});
         if (!data || data.length == 0)
           return res.send({ msg: "No data is found" });
         return res.send(data);

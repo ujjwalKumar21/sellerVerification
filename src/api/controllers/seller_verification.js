@@ -16,7 +16,7 @@ module.exports = {
   
   getSellerName: async (req, res) => {
     try {
-        const data = await sellerInfoModel.find({},{ _id: 0, fullname:1 });
+        const data = await sellerInfoModel.find({},{ fullname:1 });
         console.log(data);
         if (!data || data.length == 0)
           return res.send({ msg: "No data is found" });
